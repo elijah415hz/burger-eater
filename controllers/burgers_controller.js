@@ -5,7 +5,10 @@ const burger = require("../models/burger")
 
 router.get("/", function(req, res) {
     burger.all(function(data) {
-        res.json(data)
+        const burgersObj = {
+            burgers: data
+        };
+        res.render("index", burgersObj)
     });
 });
 
