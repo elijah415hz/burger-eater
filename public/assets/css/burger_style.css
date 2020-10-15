@@ -1,0 +1,47 @@
+body {
+    background-color: #E6C585;
+}
+h1 {
+    text-align: center;
+}
+
+ul {
+    background-color: #CC6702;
+    border-radius: 5px;
+    width: 15rem;
+    display: inline-block;
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #603C28;
+    color: #22B14C;
+  }
+
+button {
+    background-color: #ED1C24;
+    border-radius: 10px;
+    border: 2px solid red;
+    padding: 3px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#create {
+    background-color: #B75EB7;
+    border-color: purple;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.form-group {
+    display: inline-block;
+}
