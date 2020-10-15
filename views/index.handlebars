@@ -1,40 +1,47 @@
 <header>
 
-<h1>Burger Eater Inc.</h1>
-<img src="assets/img/burger.gif" alt="burger">
+    <h1>Burger Eater Inc.</h1>
+    <img src="assets/img/burger.gif" alt="burger">
 
 </header>
 
 
 <h2>Eat a burger, Make a burger, or add your own custom burger</h2>
 
-<ul>
-    <h3>Eat a burger</h3>
-    {{#each burgers}}
-    {{#unless eaten}}
-    <li>
-        {{burger_name}}
-        <button class="eat-burger" data-id="{{id}}">
-            EAT!
-        </button>
-    </li>
-    {{/unless}}
-    {{/each}}
-</ul>
+<div class="flex">
 
-<ul>
-    <h3>Make a burger</h3>
-    {{#each burgers}}
-    {{#if eaten}}
-    <li>
-        {{burger_name}}
-        <button class="make-burger" data-id="{{id}}">
-            MAKE!
-        </button>
-    </li>
-    {{/if}}
-    {{/each}}
-</ul>
+    <div class="eat">
+        <h3>Eat a burger</h3>
+        <strong>
+        {{#each burgers}}
+        {{#unless eaten}}
+        <div class="burger">
+        {{plusOne @index}}. {{burger_name}}
+            <button class="eat-burger" data-id="{{id}}">
+                EAT!
+            </button>
+        </div>
+        {{/unless}}
+        {{/each}}
+        </strong>
+    </div>
+
+    <div class="make">
+        <h3>Make a burger</h3>
+        <strong>
+        {{#each burgers}}
+        {{#if eaten}}
+        <div class="burger">
+            {{plusOne @index}}. {{burger_name}}
+            <button class="make-burger" data-id="{{id}}">
+                MAKE!
+            </button>
+        </div>
+        {{/if}}
+        {{/each}}
+        </strong>
+    </div>
+</div>
 <h3>Create a burger</h3>
 <form class="create-form">
 
