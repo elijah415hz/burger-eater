@@ -1,4 +1,6 @@
+// Wait until page has loaded to run everything within this function
 $(function () {
+    // Listener for EAT! button
     $(".eat-burger").on("click", function () {
         const id = $(this).data("id");
         console.log(id);
@@ -10,6 +12,7 @@ $(function () {
         });
 
     });
+    // Listener for MAKE! button
     $(".make-burger").on("click", function () {
         const id = $(this).data("id");
         console.log(id);
@@ -20,6 +23,7 @@ $(function () {
             location.reload();
         });
     });
+    // Listener for create burger form
     $(".create-form").on("submit", function (event) {
         event.preventDefault();
         const burgerName = $("#burger-name").val().trim();
@@ -30,8 +34,4 @@ $(function () {
             location.reload();
         })
     })
-    const Handlebars = require('handlebars');
-    Handlebars.registerHelper("plusOne", function (value, options) {
-        return parseInt(value) + 1;
-    });
 });

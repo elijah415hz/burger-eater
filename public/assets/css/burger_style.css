@@ -3,10 +3,17 @@ body {
     text-align: center;
     font-family: Hind;
 }
+
 h1 {
     text-align: center;
     font-family: Teko;
     font-size: 50px;
+}
+
+img {
+    width: 200px;
+    display: block;
+    margin: auto;
 }
 
 .flex {
@@ -19,8 +26,8 @@ h1 {
     border-radius: 5px;
     width: 15rem;
     padding: 0px 15px 15px 15px;
-    display: inline-block;
     margin: 5px;
+    display: inline-block; 
 }
 
 .burger {
@@ -29,7 +36,7 @@ h1 {
     border-radius: 5px;
     background-color: #603C28;
     color: #22B14C;
-  }
+}
 
 button {
     background-color: #ED1C24;
@@ -45,12 +52,6 @@ button:hover {
 #create {
     background-color: #B75EB7;
     border-color: purple;
-}
-
-img {
-    width: 200px;
-    display: block;
-    margin: auto;
 }
 
 .form-group {
